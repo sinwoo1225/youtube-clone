@@ -1,0 +1,6 @@
+#main-box {
+    display: flex;
+    padding-top: 60px;
+    width: 100%;
+    min-height: 100%;
+}

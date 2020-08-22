@@ -1,0 +1,6 @@
+@import "util/reset.css";
+@import "util/common.css";
+@import "component/top_header.css";
+@import "component/main_box.css";
+@import "component/main_section.css";
+@import "component/aside.css";
