@@ -1,10 +1,16 @@
 .login-box {
     border: 1px solid#065fd4;
-    border-radius: 4px;
-    padding: 10px 10px;
+    border-radius: 3px;
+    padding: 5px 11px;
     color: #065fd4;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.login-box:hover {
+    color: #fcfcfc;
+    background-color: #065fd4;
 }
 
 .login-box__icon {
@@ -15,6 +21,7 @@
 .login-box__head {
     font-weight: 500;
     font-size: 14px;
+    line-height: 8px;
 }
 
 .gray-color {
