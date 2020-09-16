@@ -110,11 +110,13 @@ nav,
 section {
     display: block;
 }
+
 body {
     line-height: 1;
     font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial,
         sans-serif;
-    color: #131313;
+    font-weight: 400;
+    color: var(--main-text-color, #131313);
 }
 ol,
 ul {
@@ -144,3 +146,72 @@ html,
 body {
     height: 100%;
 }
+
+/* css 테마별 변수설정 */
+body.lightmode {
+    --main-text-color: #131313;
+    --sub-text-color: #606060;
+    --main-background-color: #ffffff;
+    --sub-background-color: #f9f9f9;
+    --logo-text-color: #282828;
+    --scroll-bar-color: #cfcfcf;
+    --border-color: #dbdbdb;
+    --active-background-color: #e5e5e5;
+    --hover-background-color: #f2f2f2;
+    --searchbox-background-color: #ffffff;
+    --keyboard-icon-color: rgba(0, 0, 0, 0.6);
+    --button-background-color: #f6f6f6;
+    --blue-color: #065fd4;
+}
+
+body.darkmode {
+    --main-text-color: #ffffff;
+    --sub-text-color: #aaaaaa;
+    --main-background-color: #202020;
+    --sub-background-color: #181818;
+    --logo-text-color: #fcfcfc;
+    --scroll-bar-color: #4a4a4a;
+    --border-color: #2e2e2e;
+    --active-background-color: #383838;
+    --hover-background-color: #383838;
+    --searchbox-background-color: #121212;
+    --keyboard-icon-color: #c3c3c3;
+    --button-background-color: #313131;
+    --blue-color: #5ea7e8;
+}
+
+/* @media (prefers-color-scheme: light) {
+    :root {
+        --main-text-color: #131313;
+        --sub-text-color: #606060;
+        --main-background-color: #ffffff;
+        --sub-background-color: #f9f9f9;
+        --logo-text-color: #282828;
+        --scroll-bar-color: #cfcfcf;
+        --border-color: #dbdbdb;
+        --active-background-color: #e5e5e5;
+        --hover-background-color: #f2f2f2;
+        --searchbox-background-color: #ffffff;
+        --keyboard-icon-color: rgba(0, 0, 0, 0.6);
+        --button-background-color: #f6f6f6;
+        --blue-color: #065fd4;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-text-color: #ffffff;
+        --sub-text-color: #aaaaaa;
+        --main-background-color: #202020;
+        --sub-background-color: #181818;
+        --logo-text-color: #fcfcfc;
+        --scroll-bar-color: #4a4a4a;
+        --border-color: #2e2e2e;
+        --active-background-color: #383838;
+        --hover-background-color: #383838;
+        --searchbox-background-color: #121212;
+        --keyboard-icon-color: #c3c3c3;
+        --button-background-color: #313131;
+        --blue-color: #5ea7e8;
+    }
+} */

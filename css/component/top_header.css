@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     z-index: 9999;
-    background: white;
+    background: var(--main-background-color, #ffffff);
 }
 
 .top-header__column {
@@ -24,8 +24,11 @@
     margin-right: 28px;
     width: 24px;
     height: 24px;
-    color: #606060;
     cursor: pointer;
+}
+
+.top-heaer__hambuger-menu > svg {
+    fill: var(--sub-text-color, #606060);
 }
 
 .top-header__logo-box {
@@ -35,23 +38,27 @@
 .top-header__logo-box > a {
     display: flex;
     align-items: center;
+    height: 26px;
+    width: 100px;
 }
 
-.top-header__logo-box > a > img {
-    height: 26px;
+.svg-logo-text {
+    fill: var(--logo-text-color, #fcfcfc);
 }
 
 .top-header__logo-language {
     color: #bdc3c7;
-    font-size: 11px;
+    font-size: 10px;
     align-self: flex-start;
-    font-weight: 600;
+    font-weight: 200;
+    margin-left: 5px;
 }
 
 .top-header__search-box {
     display: flex;
-    border: 1px solid rgba(204, 204, 204, 1);
+    border: 1px solid var(--border-color, #dbdbdb);
     border-radius: 3px;
+    background-color: var(--searchbox-background-color, #131313);
 }
 
 .top-header__search-box-column:first-child {
@@ -59,8 +66,10 @@
 }
 
 .top-header__input {
-    width: 300px;
+    background-color: var(--searchbox-background-color, #131313);
+    width: 400px;
     font-size: 16px;
+    color: inherit;
     border: none;
     outline: none;
 }
@@ -70,12 +79,13 @@
     height: 100%;
     background-color: rgba(204, 204, 204, 0.18);
     border: none;
+    outline: none;
 }
 
 .top-header__keyboard-icon {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--keyboard-icon-color, rgba(0, 0, 0, 0.6));
 }
 
 .top-header__search-icon {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--keyboard-icon-color, rgba(0, 0, 0, 0.6));
 }

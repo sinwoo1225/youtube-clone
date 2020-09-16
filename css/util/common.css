@@ -1,8 +1,12 @@
+.hidden {
+    display: none;
+}
+
 .login-box {
-    border: 1px solid#065fd4;
+    border: 1px solid var(--blue-color, #065fd4);
     border-radius: 3px;
     padding: 5px 11px;
-    color: #065fd4;
+    color: var(--blue-color, #065fd4);
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -10,7 +14,7 @@
 
 .login-box:hover {
     color: #fcfcfc;
-    background-color: #065fd4;
+    background-color: var(--blue-color, #065fd4);
 }
 
 .login-box__icon {
@@ -25,5 +29,64 @@
 }
 
 .gray-color {
-    color: #606060;
+    color: var(--sub-text-color, #606060);
+}
+
+.theme-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    border-radius: 18px;
+    background-color: white;
+    outline: none;
+    color: inherit;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 12px 19.2px;
+}
+
+body.darkmode .theme-button {
+    background-color: #333638;
+}
+
+.theme-button__icon {
+    display: inline-block;
+    width: 11px;
+    margin-right: 3px;
+}
+
+.theme-button__icon-svg {
+    fill: #757575;
+}
+
+body.darkmode .theme-button__icon-svg {
+    fill: #c3c9d2;
+}
+
+.theme-button__text {
+    font-size: 13px;
+}
+
+body.darkmode .theme-button__text {
+    color: #fcfcfc;
+}
+
+.theme-button:hover {
+    background-color: #404040;
+}
+
+body.darkmode .theme-button:hover {
+    background-color: #53575c;
+}
+
+.theme-button:hover .theme-button__icon-svg {
+    fill: #fbe303;
+}
+
+.theme-button:hover .theme-button__text {
+    color: #fcfcfc;
+}
+
+body.darkmode .theme-button:hover .theme-button__icon-svg {
+    fill: #19ce60;
 }

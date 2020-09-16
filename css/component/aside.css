@@ -1,14 +1,16 @@
 #aside-menu {
     width: 240px;
     position: fixed;
+    font-size: 15px;
     left: 0;
     height: calc(100vh - 60px);
     z-index: 1000;
     overflow-y: auto;
+    background: var(--main-background-color, #ffffff);
 }
 
 #aside-menu:hover::-webkit-scrollbar-thumb {
-    background-color: #cfcfcf;
+    background-color: var(--scroll-bar-color, #cfcfcf);
 }
 
 #aside-menu::-webkit-scrollbar {
@@ -20,7 +22,7 @@
 }
 
 .aside-menu__page-list {
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid var(--border-color, #dbdbdb);
     padding: 12px 0;
 }
 
@@ -32,11 +34,11 @@
 }
 
 .aside-menu__page-list-item:hover {
-    background-color: #f2f2f2;
+    background-color: var(--hover-background-color, #f2f2f2);
 }
 
 .aside-menu__page-list-item--active {
-    background-color: #e5e5e5;
+    background-color: var(--active-background-color, #e5e5e5);
 }
 
 .aside-menu__icon {
@@ -46,7 +48,7 @@
 }
 
 .aside-menu__icon__svg {
-    fill: #606060;
+    fill: var(--sub-text-color, #606060);
 }
 
 .aside-menu__icon__svg--active {
@@ -54,18 +56,19 @@
 }
 
 .aside-menu__text {
-    color: #131313;
+    fill: var(--main-text-color, #131313);
 }
 
 .aside-menu__login-section {
     padding: 16px 32px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid var(--sub-text-color, #606060);
 }
 
 .aside-menu__login-section__paragraph {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 12px;
-    line-height: 18px;
+    line-height: 22px;
+    font-weight: 200;
 }
 
 .aside-menu__navigation__head {
@@ -73,7 +76,7 @@
     height: 40px;
     font-size: 14px;
     line-height: 40px;
-    color: #606060;
+    color: var(--sub-text-color, #606060);
 }
 
 .chanel-list {
